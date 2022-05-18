@@ -1,0 +1,102 @@
+
+.modal-buttons {
+  position: absolute;
+  top: 11px;
+  left: 12px;
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  fill: #000000;
+}
+
+
+
+.modal__btn {
+  position: absolute;
+
+  top: 8px;
+  right: 8px;
+  padding: 0;
+
+  display: flex;
+
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  cursor: pointer;
+  color: #000000;
+  background-color: $primary-bgc-color;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+
+  transition: fill $transition;
+}
+
+.button {
+  display: inline-block;
+  background-color: $accent-color;
+  color: $third-class-text-color;
+
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.875;
+
+  text-align: center;
+  letter-spacing: 0.06em;
+
+  border-radius: 4px;
+  min-width: 200px;
+  padding: 10px 32px;
+
+  cursor: pointer;
+  border: transparent;
+
+  transition: background-color $transition;
+
+      &:hover,
+      &:focus {
+  background-color: #188ce8;
+}
+
+}
+
+
+.portfolio-buttons__btn {
+  background-color: $secondary-bgc;
+  color: $primary-text-color;
+
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  text-align: center;
+  letter-spacing: 0.03em;
+  
+  border-radius: 4px;
+  border: transparent;
+
+  padding: 6px 22px;
+
+  cursor: pointer;
+
+  transition: color $transition, background-color $transition,
+    box-shadow $transition;
+  }
+  
+  .subscribe-button {
+    position: relative;
+    
+  
+    text-align: left;
+    margin-top: 20px;
+
+
+    @media screen and (max-width:1200px) {
+      max-width: 200px;
+    }
+
+    @media screen and (min-width:1200px) {
+      margin-top: 0;
+    }
+  }
+

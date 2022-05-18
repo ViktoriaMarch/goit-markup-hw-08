@@ -1,0 +1,46 @@
+.do {
+padding-bottom: 94px;
+ display: none;
+
+
+@media screen and (min-width: 1200px) {
+  display: block;
+}
+}
+
+.do-list {
+  display: flex;
+}
+
+.do__item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.do-list__overlay {
+  position: relative;
+  height: 294px;
+}
+
+.do-list__background {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+
+  width: 100%;
+  min-height: 70px;
+
+  background-color: rgba(47, 48, 58, 0.8);
+  padding-top: 27px;
+}
+
+.do-list__text {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  margin: 0;
+  color: $third-class-text-color;
+}

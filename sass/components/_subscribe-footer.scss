@@ -1,0 +1,92 @@
+.subscribe {
+  @media screen and (min-width:1200px) {
+    text-align: left;
+    // max-width: 570px;
+    width: 570px;
+  }
+}
+
+.email-form {
+  position: relative;
+  display: block;
+  max-width: 450px;
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+
+  @media screen and (max-width:479px) {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+
+  @media screen and (min-width:1200px) {
+    max-width: 358px;
+  width: 100%;
+  margin-right: 12px;
+  }
+
+  &__label {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 16px;
+  line-height: 1.25;
+  
+}
+}
+
+.email-input {
+ display: inline-flex;
+width: 100%;
+ 
+  height: 50px;
+  padding-right: 10px;
+  padding-left: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  background-color: $accent-bg-color;
+  color: rgba(255, 255, 255, 0.6);
+
+  // @media screen and (max-width: 400px) {
+  //   width: 350px;
+  // }
+
+  @media screen and (min-width:1200px) {
+    width: 358px;
+  }
+
+    &:focus + .email-form__label {
+  visibility: hidden;
+}
+}
+
+
+.subscribe-form {
+  // display: flex;
+  // flex-direction: column;
+  // align-items: center;
+  display: block;
+  text-align: center;
+  height: 50px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 60px;
+ justify-content: center;
+
+  @media screen and (min-width:1200px) {
+    display: flex;
+    flex-direction: row;
+    // width: 358px;
+    margin: 0;
+  }
+}
+
+
+.subscribe-icon {
+  position: absolute;
+  top: 13px;
+  right: 28px;
+  height: 24px;
+  width: 24px;
+}
