@@ -1308,7 +1308,7 @@ summary {
   margin-bottom: 30px;
   max-width: 450px;
 }
-@media screen and (min-width: 768px) and (max-width: 1199px) {
+@media screen and (min-width: 768px) {
   .team-list__item {
     width: calc((100% - 60px) / 2);
   }
@@ -1319,6 +1319,9 @@ summary {
 @media screen and (min-width: 1200px) {
   .team-list__item {
     width: 270px;
+  }
+  .team-list__item:nth-child(even) {
+    margin-left: 0;
   }
   .team-list__item:not(:last-child) {
     margin-right: 30px;

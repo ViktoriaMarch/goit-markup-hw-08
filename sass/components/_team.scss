@@ -27,7 +27,7 @@
     margin-bottom: 30px;
     max-width: 450px;
 
-    @media screen and (min-width: 768px)  and (max-width:1199px){
+    @media screen and (min-width: 768px) {
       // margin: 15px;
       width: calc((100% - 4 * 15px) / 2);
       &:nth-child(even) {
@@ -37,7 +37,9 @@
 
     @media screen and (min-width: 1200px) {
       width: 270px;
-    
+      &:nth-child(even) {
+        margin-left: 0;
+      }
 
       &:not(:last-child) {
         margin-right: 30px;
