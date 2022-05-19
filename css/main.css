@@ -1806,7 +1806,7 @@ summary {
   letter-spacing: 0.03em;
   margin: 0 auto 30px auto;
   color: #212121;
-  width: 370px;
+  max-width: 370px;
 }
 @media screen and (min-width: 1200px) {
   .modal-form__title {
