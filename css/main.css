@@ -980,6 +980,11 @@ summary {
   font-size: 16px;
   line-height: 1.25;
 }
+@media screen and (max-width: 479px) {
+  .email-form__label {
+    left: 25px;
+  }
+}
 
 .email-input {
   display: -webkit-inline-box;
@@ -1489,6 +1494,14 @@ summary {
       -ms-flex-pack: center;
           justify-content: center;
 }
+@media screen and (max-width: 767px) {
+  .clients-list {
+    max-width: 450px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
 @media screen and (min-width: 768px) {
   .clients-list {
     display: -webkit-box;
@@ -1715,6 +1728,7 @@ summary {
   background-color: rgba(0, 0, 0, 0.2);
   -webkit-transition: opacity 250ms linear;
   transition: opacity 250ms linear;
+  overflow-y: hidden;
 }
 
 .backdrop--is-hidden {
@@ -1737,6 +1751,7 @@ summary {
   width: 100%;
   max-height: 609px;
   height: 100%;
+  z-index: 20;
 }
 @media screen and (min-width: 1200px) {
   .modal {
