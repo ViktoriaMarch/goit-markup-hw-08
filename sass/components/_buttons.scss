@@ -76,12 +76,14 @@
   border: transparent;
 
   padding: 6px 22px;
+ 
 
   cursor: pointer;
 
   transition: color $transition, background-color $transition,
     box-shadow $transition;
   }
+
   
   .subscribe-button {
     position: relative;

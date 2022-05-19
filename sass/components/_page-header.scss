@@ -173,19 +173,19 @@
   background-color: transparent;
   // z-index: 2;
 
-  @media screen and (min-width: 767px) {
+  @media screen and (min-width: 768px) {
     display: none;
   }
 }
 
-.icon-close-menu {
-  display: none;
+// .icon-close-menu {
+//   display: none;
 
-  .menu-button.is-open & {
-    display: block;
-  }
-}
+//   .menu-button.is-open & {
+//     display: block;
+//   }
+// }
 
-.menu-button.is-open .icon-menu {
-  display: none;
-}
+// .menu-button.is-open .icon-menu {
+//   display: none;
+// }
