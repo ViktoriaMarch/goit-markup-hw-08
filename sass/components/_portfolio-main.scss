@@ -10,23 +10,32 @@
   display: flex;
   flex-wrap: wrap;
   margin-bottom: 25px;
+  justify-content: center;
+  
 
-  @media screen and (min-width:768px ) {
+    @media screen and (max-width:649px) {
+      justify-content: left;
+    }
+
+  @media screen and (min-width: 768px) {
     flex-wrap: nowrap;
     justify-content: center;
     margin-bottom: 30px;
   }
 
-  @media screen and (min-width:1200px) {
+  @media screen and (min-width: 1200px) {
     margin-bottom: 50px;
   }
 
   &__item:not(:last-child) {
     margin-right: 8px;
-     margin-bottom: 15px;
+    margin-bottom: 15px;
+
+    @media screen and (min-width: 768px) {
+      margin-bottom: 0;
+    }
   }
 }
-
 
 .portfolio-buttons__btn:hover,
 .portfolio-buttons__btn:focus {

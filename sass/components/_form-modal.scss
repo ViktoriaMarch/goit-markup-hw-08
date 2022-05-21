@@ -61,8 +61,8 @@
 }
 
 .label-policy {
-  font-size: 14px;
-  line-height: 1.7;
+  font-size: 12px;
+  line-height: 1.16;
   letter-spacing: 0.03em;
   color: $secondary-text-color;
   margin-left: 20px;
@@ -71,6 +71,11 @@
             color: $accent-color;
             font-family: inherit;
             }
+
+        @media screen and (min-width:1200px) {
+          font-size: 14px;
+  line-height: 1.7;
+        }
 }
 
 
@@ -100,13 +105,17 @@
   position: relative;
   display: flex;
   align-items: center;
-  margin-left: 8px;
+
   margin-bottom: 20px;
+
+  @media screen and (min-width:1200px) {
+    margin-left: 8px;
+  }
 }
 
 .checkbox__icon {
   position: absolute;
-  top: 3px;
+  
   left: 0;
   display: inline-block;
   width: 15px;
@@ -114,6 +123,10 @@
   border: 2px solid #212121;
   border-radius: 2px;
   transition: background-color $transition;
+
+  @media screen and (min-width:1200px) {
+  top: 3px;
+  }
 }
 
 .checkbox__input {
