@@ -287,11 +287,17 @@ summary {
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
+  position: relative;
 }
 @media screen and (max-width: 1199px) {
   .container {
     margin-left: auto;
     margin-right: auto;
+  }
+}
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -560,20 +566,6 @@ summary {
   }
 }
 
-.menu-button {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  padding: 0;
-  border: none;
-  background-color: transparent;
-}
-@media screen and (min-width: 768px) {
-  .menu-button {
-    display: none;
-  }
-}
-
 .portfolio-header {
   border-bottom: 1px solid #ececec;
 }
@@ -589,7 +581,7 @@ summary {
       -ms-flex-pack: center;
           justify-content: center;
 }
-@media screen and (max-width: 649px) {
+@media screen and (max-width: 768px) {
   .portfolio-buttons {
     -webkit-box-pack: left;
         -ms-flex-pack: left;
@@ -880,11 +872,17 @@ summary {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
   }
 }
 @media screen and (min-width: 1200px) {
   .footer-flex {
     text-align: left;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
   }
 }
 
@@ -897,7 +895,7 @@ summary {
   color: #ffffff;
   margin-bottom: 20px;
   text-align: center;
-  padding-top: 20px;
+  padding-top: 0;
   margin-top: 0;
 }
 .footer-title__join {
@@ -1244,9 +1242,6 @@ summary {
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
     max-width: 1200px;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
   }
 }
 
@@ -1295,6 +1290,8 @@ summary {
   line-height: 1.7;
   letter-spacing: 0.03em;
   max-width: 450px;
+  margin-bottom: 0;
+  margin-top: 0;
 }
 @media screen and (min-width: 768px) {
   .features-list__text {
@@ -1312,14 +1309,16 @@ summary {
   height: 70px;
 }
 
-.features-list__item {
+.features-list__item:not(:last-child) {
   margin-bottom: 30px;
 }
 @media screen and (min-width: 768px) {
   .features-list__item {
     margin-right: 30px;
-    width: calc((100% - 60px) / 2);
     max-width: 354px;
+  }
+  .features-list__item:nth-child(even) {
+    margin-right: 0;
   }
   .features-list__item:nth-child(n+3) {
     margin-bottom: 0;
@@ -1328,6 +1327,12 @@ summary {
 @media screen and (min-width: 1200px) {
   .features-list__item {
     width: calc((100% - 90px) / 4);
+    margin-bottom: 0;
+  }
+  .features-list__item:nth-child(2) {
+    margin-right: 30px;
+  }
+  .features-list__item:nth-child(-n+2) {
     margin-bottom: 0;
   }
 }
@@ -1554,6 +1559,8 @@ summary {
       flex-wrap: wrap;
   padding: 0;
   margin-right: -30px;
+  margin-bottom: 0;
+  margin-top: 0;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -1572,7 +1579,6 @@ summary {
     display: -ms-flexbox;
     display: flex;
     padding: 0;
-    margin: -15px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1591,12 +1597,17 @@ summary {
   max-width: 210px;
   width: 100%;
   width: calc((100% - 60px) / 2);
+  margin-bottom: 30px;
+}
+.clients__item:nth-child(n+5) {
+  margin-bottom: 0;
 }
 @media screen and (min-width: 768px) {
-  .clients__item .clients__item {
-    margin: 15px;
-    max-width: 226px;
-    width: 100%;
+  .clients__item {
+    margin-bottom: 30px;
+  }
+  .clients__item:nth-child(n+4) {
+    margin-bottom: 0;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1610,10 +1621,6 @@ summary {
   .clients__item:nth-child(5) {
     margin-bottom: 30px;
   }
-}
-
-.clients__item:nth-child(-n+4) {
-  margin-bottom: 30px;
 }
 
 .clients-link {
@@ -1936,7 +1943,6 @@ summary {
 
 .mobile-container {
   padding: 48px 40px;
-  position: relative;
   height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1952,8 +1958,19 @@ summary {
 
 .menu-button {
   position: absolute;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  padding: 0;
+  border: none;
+  background-color: transparent;
   top: 10px;
   right: 15px;
+}
+@media screen and (min-width: 768px) {
+  .menu-button {
+    display: none;
+  }
 }
 
 .mobile-list__item:not(:last-child) {

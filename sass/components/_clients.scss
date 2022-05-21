@@ -6,7 +6,8 @@
   // justify-content: space-between;
   padding: 0;
   margin-right: -30px;
-
+  margin-bottom: 0;
+  margin-top: 0;
   justify-content: center;
 
   @media screen and (max-width: 767px) {
@@ -19,7 +20,6 @@
   @media screen and (min-width: 768px) {
     display: flex;
     padding: 0;
-    margin: -15px;
   }
 
   @media screen and (min-width: 1200px) {
@@ -34,13 +34,15 @@
   max-width: 210px;
   width: 100%;
   width: calc((100% - 4 * 15px) / 2);
+margin-bottom: 30px;
+  &:nth-child(n+5) {
+    margin-bottom: 0;
+  }
 
   @media screen and (min-width: 768px) {
-    .clients__item {
-      // width: calc((100% - 6 * 15px) / 3);
-      margin: 15px;
-      max-width: 226px;
-      width: 100%;
+    margin-bottom: 30px;
+    &:nth-child(n + 4) {
+      margin-bottom: 0;
     }
   }
   @media screen and (min-width: 1200px) {
@@ -55,9 +57,9 @@
   }
 }
 
-.clients__item:nth-child(-n + 4) {
-  margin-bottom: 30px;
-}
+// .clients__item:nth-child(-n + 4) {
+//   margin-bottom: 30px;
+// }
 
 .clients-link {
   color: $social-link-color;

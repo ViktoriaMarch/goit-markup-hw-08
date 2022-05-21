@@ -166,26 +166,5 @@
   }
 }
 
-.menu-button {
-  display: inline-flex;
-  padding: 0;
-  border: none;
-  background-color: transparent;
-  // z-index: 2;
 
-  @media screen and (min-width: 768px) {
-    display: none;
-  }
-}
 
-// .icon-close-menu {
-//   display: none;
-
-//   .menu-button.is-open & {
-//     display: block;
-//   }
-// }
-
-// .menu-button.is-open .icon-menu {
-//   display: none;
-// }

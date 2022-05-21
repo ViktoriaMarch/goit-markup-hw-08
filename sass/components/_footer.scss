@@ -69,11 +69,13 @@
   @media screen and (min-width: 768px) {
     justify-content: space-around;
     flex-direction: row;
+        align-items: baseline;
   }
 
   @media screen and (min-width: 1200px) {
     // flex-direction: row;
     text-align: left;
+    align-items: flex-start;
   }
 }
 
@@ -87,9 +89,13 @@
   margin-bottom: 20px;
   // text-align: left;
   text-align: center;
-  padding-top: 20px;
+  padding-top: 0;
 
   margin-top: 0;
+
+// @media screen and (min-width:768px) {
+//   padding-top: 20px;
+// }
 
   &__join {
     padding-top: 0;
