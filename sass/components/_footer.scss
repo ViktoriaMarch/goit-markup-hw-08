@@ -119,11 +119,13 @@
 .logo-footer {
   @media screen and (min-width: 1200px) {
     margin-right: 70px;
+    
   }
 }
 
 .social {
   @media screen and (min-width: 1200px) {
     margin-right: 93px;
+    align-self: center;
   }
 }

@@ -660,15 +660,18 @@ summary {
   }
 }
 .projects-list__item {
-  -ms-flex-preferred-size: calc(33.3333333333% - 30px);
-      flex-basis: calc(33.3333333333% - 30px);
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 30px;
   -webkit-transition: -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.projects-list__item:not(:last-child) {
+  margin-bottom: 30px;
+}
+.projects-list__item:last-child {
+  margin-bottom: 15px;
 }
 @media screen and (max-width: 767px) {
   .projects-list__item {
@@ -681,14 +684,15 @@ summary {
     width: calc((100% - 60px) / 2);
     max-width: 100%;
   }
-  .projects-list__item:nth-child(9) {
-    margin-right: auto;
-    margin-left: 15px;
-  }
+}
+.projects-list__item:nth-child(9) {
+  margin-right: auto;
+  margin-left: 15px;
 }
 @media screen and (min-width: 1200px) {
   .projects-list__item {
     width: calc((100% - 90px) / 3);
+    max-width: 100%;
   }
 }
 .projects-list__item:hover, .projects-list__item:focus {
@@ -722,6 +726,11 @@ summary {
   line-height: 1.9;
   letter-spacing: 0.03em;
   margin: 0px 0px;
+}
+@media screen and (min-width: 1200px) {
+  .projects-group__name {
+    max-width: 370px;
+  }
 }
 
 .projects-link__img {
@@ -923,6 +932,8 @@ summary {
 @media screen and (min-width: 1200px) {
   .social {
     margin-right: 93px;
+    -ms-flex-item-align: center;
+        align-self: center;
   }
 }
 
@@ -961,6 +972,8 @@ summary {
   .subscribe {
     text-align: left;
     width: 570px;
+    -ms-flex-item-align: center;
+        align-self: center;
   }
 }
 
@@ -1569,8 +1582,6 @@ summary {
   .clients-list {
     max-width: 450px;
     width: 100%;
-    margin-left: auto;
-    margin-right: auto;
   }
 }
 @media screen and (min-width: 768px) {
@@ -1588,7 +1599,6 @@ summary {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    margin-right: 0;
   }
 }
 
@@ -1614,12 +1624,7 @@ summary {
   .clients__item {
     max-width: 170px;
     width: 100%;
-  }
-}
-
-@media screen and (max-width: 479px) {
-  .clients__item:nth-child(5) {
-    margin-bottom: 30px;
+    margin-bottom: 0;
   }
 }
 
